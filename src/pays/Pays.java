@@ -62,7 +62,7 @@ public class Pays implements Comparable<Pays>{
     }
 
     public String toString(){
-        String aEnvoye = "Nom : " + this.nom + "\nPopulation : " + this.population + "\nSurface : " + this.surface;        
+        String aEnvoye = "\n\nNom : " + this.nom + "\nPopulation : " + this.population + "\nSurface : " + this.surface;        
         return(aEnvoye);
     }
 

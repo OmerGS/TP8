@@ -31,6 +31,7 @@ public class demoPays {
 
         if(choix == 2){
             System.out.println("\033[H\033[2J");
+            System.out.println("Entrez un pays");
             Scanner pays = new Scanner(System.in);
             String paysChercher = pays.nextLine();
             
@@ -39,7 +40,9 @@ public class demoPays {
             if(paysRetourner != null){
                 System.out.println(paysRetourner.toString());
             } else {
+                System.out.print("\033[0;31m");
                 System.out.println("Pas trouve");
+                System.out.print("\033[0m");
             }
         } 
 
@@ -75,7 +78,9 @@ public class demoPays {
                 System.out.println(paysChercher2 + " a la meme superficie que " + paysChercher);
             }
         } else {
+            System.out.println("\033[0;31m");
             System.out.println("Pays non reconnu");
+            System.out.println("\033[0m");
         }
     }
 
